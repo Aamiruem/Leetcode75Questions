@@ -22,7 +22,7 @@ public class Q1MergeString1768 {
         String word1 = "abc";
         String word2 = "pqr";
 
-        System.out.println(obj.mergeAlternately(word1, word2));
+        System.out.println( "The joining of Two alternatively string =  " + obj.mergeAlternately(word1, word2));
 
     }
 }
