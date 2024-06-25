@@ -20,12 +20,21 @@ public class Q238ProductExceptSelf {
     }
 
     public static void main(String[] args) {
-        Q238ProductExceptSelf q238ProductExceptSelf = new Q238ProductExceptSelf();
+        Q238ProductExceptSelf ps = new Q238ProductExceptSelf();
         int[] nums = {1, 2, 3, 4};
         System.out.println(Arrays.toString(nums));
         
-        int[] ans = q238ProductExceptSelf.productExceptSelf(nums);
+        int[] ans = ps.productExceptSelf(nums);
         System.out.println(Arrays.toString(ans));
+
+        System.out.println(" ");
+
+        //2nd
+        int[] nums2 = {-1,1,0,-3,3};
+        System.out.println(Arrays.toString(nums2));
+        
+        int[] ans2 = ps.productExceptSelf(nums2);
+        System.out.println(Arrays.toString(ans2));
 
     }
 }
