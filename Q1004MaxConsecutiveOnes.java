@@ -47,24 +47,74 @@
 
 
 
+// public class Q1004MaxConsecutiveOnes {
+
+//     // Method to find the longest subarray with at most k 0's
+//     public int longestOnes(int[] nums, int k) {
+//         int start = 0, max = 0; // Initialize the start pointer and max length
+//         int countZero = 0; // To count the number of 0's in the current window
+
+//         // Iterate over the array using the end pointer
+//         for (int end = 0; end < nums.length; end++) {
+//             if (nums[end] == 0) {
+//                 countZero++; // Increment count of 0's if the current element is 0
+//             }
+
+//             // If count of 0's exceeds k, shrink the window from the start
+//             if (countZero > k) {
+//                 while (countZero > k) {
+//                     if (nums[start] == 0) {
+//                         countZero--; // Decrement count of 0's if the element at start is 0
+//                     }
+//                     start++; // Move the start pointer to the right
+//                 }
+//             }
+
+//             // Calculate the maximum length of the window
+//             max = Math.max(max, end - start + 1);
+//         }
+
+//         return max; // Return the maximum length found
+//     }
+
+//     public static void main(String[] args) {
+//         Q1004MaxConsecutiveOnes obj = new Q1004MaxConsecutiveOnes();
+
+//         int[] nums = {1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0}; // Sample input array
+//         int k = 2; // Maximum number of 0's allowed to be flipped
+
+//         int result = obj.longestOnes(nums, k); // Get the result
+
+//         System.out.println(result); // Print the result
+//     }
+// }
+
+
+
+
+
+
+
+
+
 public class Q1004MaxConsecutiveOnes {
 
-    // Method to find the longest subarray with at most k 0's
-    public int longestOnes(int[] nums, int k) {
+    // Method to find the longest subarray with at most k 1's
+    public int longestZeros(int[] nums, int k) {
         int start = 0, max = 0; // Initialize the start pointer and max length
-        int countZero = 0; // To count the number of 0's in the current window
+        int countOne = 0; // To count the number of 1's in the current window
 
         // Iterate over the array using the end pointer
         for (int end = 0; end < nums.length; end++) {
-            if (nums[end] == 0) {
-                countZero++; // Increment count of 0's if the current element is 0
+            if (nums[end] == 1) {
+                countOne++; // Increment count of 1's if the current element is 1
             }
 
-            // If count of 0's exceeds k, shrink the window from the start
-            if (countZero > k) {
-                while (countZero > k) {
-                    if (nums[start] == 0) {
-                        countZero--; // Decrement count of 0's if the element at start is 0
+            // If count of 1's exceeds k, shrink the window from the start
+            if (countOne > k) {
+                while (countOne > k) {
+                    if (nums[start] == 1) {
+                        countOne--; // Decrement count of 1's if the element at start is 1
                     }
                     start++; // Move the start pointer to the right
                 }
@@ -81,10 +131,10 @@ public class Q1004MaxConsecutiveOnes {
         Q1004MaxConsecutiveOnes obj = new Q1004MaxConsecutiveOnes();
 
         int[] nums = {1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0}; // Sample input array
-        int k = 2; // Maximum number of 0's allowed to be flipped
+        int k = 4; // Maximum number of 1's allowed to be flipped to 0's
 
-        int result = obj.longestOnes(nums, k); // Get the result
+        int result = obj.longestZeros(nums, k); // Get the result for longest consecutive 0's
 
-        System.out.println(result); // Print the result
+        System.out.println("count the longest consecutive zeros = " + result); // Print the result
     }
 }
