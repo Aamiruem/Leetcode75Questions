@@ -49,7 +49,7 @@ public class Q1456MaxNumOfVowelsLength {
         System.out.println(result); // Output the result, should be 2 (any substring of length 2 has 2 vowels)
     }
 }
-
+ 
 
 
 
