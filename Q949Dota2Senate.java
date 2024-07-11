@@ -37,7 +37,6 @@ public class Q949Dota2Senate {
 
         System.out.println(obj.predictPartyVictory(senate));
 
-
         String senate1 = "RDD";
 
         System.out.println(obj.predictPartyVictory(senate1));
