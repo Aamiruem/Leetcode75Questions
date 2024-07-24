@@ -62,7 +62,7 @@ public class Q1926NearestExitFromEntrance {
         };
 
         int[] entrance = {1, 2};
-        System.out.println(obj.nearestExit(maze, entrance)); // Expected Output: 2
+        System.out.println(obj.nearestExit(maze, entrance)); // Expected Output: 1
 
         char[][] maze2 = {
             {'+', '+', '+', '+', '+', '+'},
@@ -74,6 +74,6 @@ public class Q1926NearestExitFromEntrance {
         int[] entrance2 = {2, 3};
         System.out.println(obj.nearestExit(maze2, entrance2)); // Expected Output: -1
 
-        
+
     }
 }
