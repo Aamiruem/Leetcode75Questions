@@ -66,19 +66,19 @@ public class Q2462TotalCostOfHireKWorker {
         return res;
 
     }
+
     public static void main(String[] args) {
 
         Q2462TotalCostOfHireKWorker obj = new Q2462TotalCostOfHireKWorker();
 
-        int[] costs = new int[]{17,12,10,2,7,2,11,20,8};
+        int[] costs = new int[]{17, 12, 10, 2, 7, 2, 11, 20, 8};
         int k = 3;
         int candidates = 4;
         long output = obj.totalCost(costs, k, candidates);
         System.out.println("Total Cost: " + output); // Output: 9
         System.out.println("Expected Output: 9");
 
-
-        int[] costs2 = new int[]{1,2,4,1};
+        int[] costs2 = new int[]{1, 2, 4, 1};
         int k2 = 3;
         int candidates2 = 3;
         long output2 = obj.totalCost(costs2, k2, candidates2);
