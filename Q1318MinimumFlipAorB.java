@@ -27,15 +27,12 @@ public class Q1318MinimumFlipAorB {
     public static void main(String[] args) {
 
         Q1318MinimumFlipAorB obj = new Q1318MinimumFlipAorB();
-
         int a = 2, b = 6, c = 5;
-
         System.out.println(obj.minFlips(a, b, c));
 
         System.out.println();
 
         int a1 = 4, b1 = 2, c1 = 7;
-
         System.out.println(obj.minFlips(a1, b1, c1));
 
 
